@@ -3,6 +3,12 @@
   font-size: 80%;
 }
 
+@media only screen and (max-width: 600px) {
+  :root {
+    font-size: 50%;
+  }
+}
+
 body {
   display: grid;
   grid-template-columns: 1fr;
@@ -14,7 +20,7 @@ body {
 }
 
 img {
-    width: 60%;
+  width: 60%;
 }
 
 main {
@@ -37,6 +43,11 @@ p {
   text-align: center;
 
   color: #262338;
+  padding: 1rem;
+}
+
+a {
+  color: #610bef;
 }
 
 section.contact {
@@ -51,4 +62,44 @@ footer {
   font-weight: 300;
   text-align: center;
   margin-bottom: 1rem;
+}
+
+div.circle {
+  z-index: -1;
+  position: fixed;
+}
+
+div.top {
+  width: 46.1875rem;
+  height: 32.8125rem;
+  left: 25%;
+  top: -18%;
+
+  background: #610bef;
+  opacity: 0.25;
+  filter: blur(200px);
+}
+
+div.side {
+  width: 46.1875rem;
+  height: 32.8125rem;
+  right: -20%;
+  bottom: -10%;
+
+  background: #fac646;
+  opacity: 0.5;
+  filter: blur(250px);
+}
+
+div.bottom {
+  width: 36.1875rem;
+  height: 25.6875rem;
+  left: -10%;
+  bottom: -10%;
+
+  /* Blue 3 */
+
+  background: #56ccf2;
+  opacity: 0.55;
+  filter: blur(350px);
 }
